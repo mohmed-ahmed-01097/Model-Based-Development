@@ -51,6 +51,8 @@ repeatedMatrix = repmat(originalMatrix, 2);
 % Display the contents of repeatedMatrix
 disp('originalMatrix :');
 disp(originalMatrix);
+disp('repeatedMatrix :');
+disp(repeatedMatrix);
 
 %% Part 4: Challenge
 % Challenge yourself by performing : the following tasks

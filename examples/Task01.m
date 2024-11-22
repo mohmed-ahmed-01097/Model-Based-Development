@@ -28,7 +28,7 @@ evenNumbers = 2:2:10;
 
 % Create a column vector primeNumbers containing the first 5 prime numbers (2, 3, 5, 7, 11).
 primesArray = primes(100);
-primeNumbers = primesArray(1:5)';
+primeNumbers = primesArray(1:5);
 
 % Display both evenNumbers and primeNumbers.
 disp('evenNumbers :');
@@ -41,7 +41,7 @@ disp(primeNumbers);
 identityMatrix = eye(3);
 
 % Create a 3x3 magic square magicSquare using another specialized matrix function.
-magicSquare = magic(3);
+magicSquare = ones(2,2);
 
 % Display both identityMatrix and magicSquare.
 disp('identityMatrix :');
@@ -52,13 +52,20 @@ disp(magicSquare);
 %% Matrix Concatenation:
 % Concatenate the evenNumbers vector horizontally with the primeNumbers vector to create a
 % new row vector combinedVector.
-combinedVector = horzcat(evenNumbers,primeNumbers');
+combinedVector = horzcat(evenNumbers,primeNumbers);
 
 % Display the combinedVector.
 disp('combinedVector :');
 disp(combinedVector);
 
 % Create a new matrix combinedMatrix by vertically concatenating identityMatrix and magicSquare.
+if length(identityMatrix) > length(magicSquare)
+    MAX = length(identityMatrix);
+    magicSquare(end+1:MAX,MAX)=0;
+else
+    MAX = length(magicSquare);
+    identityMatrix(end+1:MAX,MAX)=0;
+end
 combinedMatrix = vertcat(identityMatrix, magicSquare);
 
 % Display the combinedMatrix.
