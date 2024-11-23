@@ -1,0 +1,127 @@
+Software Requirements Specification (SRS) for Simple Robotics Simulation
+
+ 1. Introduction
+
+ 1.1 Purpose
+
+The purpose of this document is to provide a comprehensive overview of the requirements for the development of the Simple Robotics Simulation application. This software aims to simulate the motion of a simple robot with two links, allowing users to visualize and understand basic robotics concepts.
+
+ 1.2 Scope
+
+The Simple Robotics Simulation app will allow users to input the lengths of two links and observe the robot's motion over a specified simulation time. The application will provide real-time visualization of the robot's movement, enhancing user understanding of robot kinematics.
+
+ 1.3 Document Conventions
+
+- UI: User Interface
+- GUI: Graphical User Interface
+
+ 2. Overall Description
+
+ 2.1 Product Perspective
+
+The Simple Robotics Simulation is a standalone MATLAB application developed using MATLAB's App Designer. It provides an interactive GUI for users to input parameters and visualize the simulated motion of a simple robot.
+
+ 2.2 Product Features
+
+ 2.2.1 Key Features
+
+1. User Input:
+   - Users can specify the lengths of two robot links through numeric input fields.
+
+2. Simulation Control:
+   - Simulate button triggers the robot motion simulation.
+   - Pause button allows users to pause and resume the simulation.
+
+3. Real-time Visualization:
+   - The GUI displays real-time updates of the robot's movement in response to changing joint angles.
+
+4. Error Handling:
+   - Input validation ensures that link lengths are within the specified range (0.1 to 5).
+   - Clear error messages are displayed for invalid inputs.
+
+ 2.2.2 Future Enhancements
+
+1. Additional Joint Angles:
+   - The application is structured to accommodate additional joint angles for future development.
+
+ 2.3 User Classes and Characteristics
+
+- Novice Users:
+  - Users with minimal experience in robotics or MATLAB.
+  - Require an intuitive and user-friendly interface.
+
+- Educational Users:
+  - Students and educators using the application for learning and teaching purposes.
+  - Seek a tool to visually comprehend basic robot kinematics.
+
+
+ 3. Functional Requirements
+
+ 3.1 User Input
+
+1. Link Length Input:
+   - Users can input the lengths of two robot links.
+   - Input fields should validate and restrict values within the range of 0.1 to 5.
+
+ 3.2 Simulation Control
+
+2. Simulation Button:
+   - Clicking the "Simulate" button initiates the robot motion simulation.
+   - Simulation runs for a predefined time span.
+
+3. Pause Button:
+   - The "Pause" button allows users to pause and resume the simulation.
+   - Pausing should halt the simulation, and resuming should continue from the current state.
+
+ 3.3 Real-time Visualization
+
+4. Robot Motion Display:
+   - The GUI displays the motion of the robot in real-time.
+   - Updates occur dynamically during the simulation.
+
+ 3.4 Error Handling
+
+5. Input Validation:
+   - Validate link lengths to ensure they are numeric and within the specified range.
+   - Display clear error messages for invalid inputs.
+
+ 4. Non-Functional Requirements
+
+ 4.1 Performance
+
+1. Real-time Simulation:
+   - The simulation should run in real-time for an enhanced user experience.
+
+ 4.2 Usability
+
+2. Intuitive Interface:
+   - The GUI should have an intuitive layout and component placement.
+   - Tooltips and labels provide guidance on component functionality.
+
+ 4.3 Maintainability
+
+3. Code Comments:
+   - The MATLAB code should include comments to enhance readability and maintainability.
+   - Comments should explain complex sections and highlight important details.
+
+ 4.4 Compatibility
+
+4. MATLAB Compatibility:
+   - The application should be compatible with MATLAB versions R20XX and later.
+   - Any dependencies on specific MATLAB toolboxes should be clearly outlined.
+
+ 5. Future Enhancements
+
+1. Additional Joint Angles:
+   - The application is structured to accommodate more joint angles in the future.
+   - Code modularization supports future development and expansion.
+
+ 6. Documentation
+
+1. User Manual:
+   - A user manual will be provided to guide users on app interaction.
+   - Includes an overview, instructions, and troubleshooting tips.
+
+ 7. Conclusion
+
+This Software Requirements Specification outlines the key requirements for the Simple Robotics Simulation application. It serves as a foundation for development, ensuring that the app meets user expectations and provides an effective tool for learning and visualizing basic robotics concepts.
