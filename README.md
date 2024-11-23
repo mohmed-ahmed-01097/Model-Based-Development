@@ -9,8 +9,8 @@ This repository is dedicated to my studies and projects related to Model-Based D
 
 ```text
 1. MBD Concepts Module                              ████████████████████  100% ✅(Completed)
-2. MATLAB Basics Module                             ██████████░░░░░░░░░░   50% 🔄(In Progress)
-3. Simulink Basics Module                           ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
+2. MATLAB Basics Module                             ████████████████████  100% ✅(Completed)
+3. Simulink Basics Module                           █░░░░░░░░░░░░░░░░░░░    1% 🔄(In Progress)
 4. Arduino Simulink Interface Module                ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 5. PID Controller Design Module                     ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 6. MATLAB Scripting Module                          ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
@@ -42,9 +42,10 @@ Model-Based Development (MBD) is a methodology that uses models as the core arti
 
 ## Projects
 
-### [Project 1: [Project Name]](projects/project1/)
+### [Project 1: [Simple Robotics Simulation application]](projects/project1/)
 
-Brief description of Project 1.
+
+Users can input the lengths of two links into the Simple Robotics Simulation application to watch the robot move over a set simulation duration. Two arms draw an ellipse.
 
 ### [Project 2: [Project Name]](projects/project2/)
 
@@ -55,7 +56,7 @@ Brief description of Project 2.
 ## Folder Structure
 
 - `/projects`: Contains subdirectories for each individual project.
-  - `/project1`: Details about Project 1.
+  - `/project1`: Simple Robotics Simulation application.
   - `/project2`: Details about Project 2.
 - `/docs`: Additional documentation related to the projects or MBD concepts.
 - `/scripts`: Any scripts or tools used in the development process.
