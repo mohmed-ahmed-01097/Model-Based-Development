@@ -10,7 +10,7 @@ This repository is dedicated to my studies and projects related to Model-Based D
 ```text
 1. MBD Concepts Module                              ████████████████████  100% ✅(Completed)
 2. MATLAB Basics Module                             ████████████████████  100% ✅(Completed)
-3. Simulink Basics Module                           █░░░░░░░░░░░░░░░░░░░    1% 🔄(In Progress)
+3. Simulink Basics Module                           ███████████████████░   90% 🔄(In Progress)
 4. Arduino Simulink Interface Module                ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 5. PID Controller Design Module                     ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 6. MATLAB Scripting Module                          ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
@@ -42,14 +42,25 @@ Model-Based Development (MBD) is a methodology that uses models as the core arti
 
 ## Projects
 
-### [Project 1: [Simple Robotics Simulation application]](projects/project1/)
+### [Project 1: [Simple Robotics Simulation application]](projects/project1 MATLAB Module/)
 
 
 Users can input the lengths of two links into the Simple Robotics Simulation application to watch the robot move over a set simulation duration. Two arms draw an ellipse.
 
-### [Project 2: [Project Name]](projects/project2/)
+### [Project 2: [Simulink Module]](projects/project2 Simulink Module/)
 
-Brief description of Project 2.
+* [Mass Spring Damper System](projects/project2 Simulink Module/Mass Spring Damper System)
+  * Modeling the Mass Spring with the Damper.
+* [SEDC Motor](projects/project2 Simulink Module/SEDC Motor)
+  * Representing the electrical and mechanical components of the separately excited DC motor system.
+* [Simple Pendulum Motion](projects/project2 Simulink Module/Simple Pendulum Motion) 
+  * Simulating the motion of a simple pendulum using MATLAB and Simulink.
+* [Simple RC Circuit](projects/project2 Simulink Module/Simple RC Circuit)
+  * model and simulate a simple RC (Resistor-Capacitor) circuit. 
+* [Temperature Control System](projects/project2 Simulink Module/Temperature Control System)
+  * design a temperature control system using MATLAB/Simulink, and then explore code generation and deployment using MATLAB's Embedded Coder with the Quick Start tool.
+* [Automated Irrigation Control System](projects/project2 Simulink Module/Automated Irrigation Control System)
+  * design an automated irrigation control system using MATLAB/Simulink and explore code generation and deployment with MATLAB's Embedded Coder and the Quick Start tool.
 
 ...
 
@@ -57,7 +68,7 @@ Brief description of Project 2.
 
 - `/projects`: Contains subdirectories for each individual project.
   - `/project1`: Simple Robotics Simulation application.
-  - `/project2`: Details about Project 2.
+  - `/project2`: Simulink Module.
 - `/docs`: Additional documentation related to the projects or MBD concepts.
 - `/scripts`: Any scripts or tools used in the development process.
 - `/examples`: Code examples or model files that illustrate specific concepts.
