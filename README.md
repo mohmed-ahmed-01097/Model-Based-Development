@@ -61,6 +61,8 @@ Users can input the lengths of two links into the Simple Robotics Simulation app
   * design a temperature control system using MATLAB/Simulink, and then explore code generation and deployment using MATLAB's Embedded Coder with the Quick Start tool.
 * [Automated Irrigation Control System](projects/project2 Simulink Module/Automated Irrigation Control System)
   * design an automated irrigation control system using MATLAB/Simulink and explore code generation and deployment with MATLAB's Embedded Coder and the Quick Start tool.
+* [Energy Management Strategy](projects/project2 Simulink Module/Energy Management Strategy)
+  * design an Energy Management Strategy (EMS) model for distributing power demand among a battery, ultracapacitor, and fuel cell, ensuring positive power output and efficient load distribution.
 
 ...
 
