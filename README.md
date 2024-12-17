@@ -10,8 +10,8 @@ This repository is dedicated to my studies and projects related to Model-Based D
 ```text
 1. MBD Concepts Module                              ████████████████████  100% ✅(Completed)
 2. MATLAB Basics Module                             ████████████████████  100% ✅(Completed)
-3. Simulink Basics Module                           ███████████████████░   90% 🔄(In Progress)
-4. Arduino Simulink Interface Module                ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
+3. Simulink Basics Module                           ████████████████████  100% ✅(Completed)
+4. Arduino Simulink Interface Module                ██████████████████░░   90% 🔄(In Progress)
 5. PID Controller Design Module                     ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 6. MATLAB Scripting Module                          ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 7. System Modeling & Model Architecture Module      ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
@@ -42,10 +42,12 @@ Model-Based Development (MBD) is a methodology that uses models as the core arti
 
 ## Projects
 
-### [Project 1: [Simple Robotics Simulation application]](projects/project1 MATLAB Module/)
+### [Project 1: [MATLAB Module]](projects/project1 MATLAB Module/)
 
-
-Users can input the lengths of two links into the Simple Robotics Simulation application to watch the robot move over a set simulation duration. Two arms draw an ellipse.
+* [Simple Robotics Simulation application](projects/project1 MATLAB Module/Simple Robotics Simulation application)
+  * Users can input the lengths of two links into the Simple Robotics Simulation application to watch the robot move over a set simulation duration. Two arms draw an ellipse.
+* [Plot Flags](projects/project1 MATLAB Module/Plot Flags)
+  * design two national flags using MATLAB’s plotting capabilities..
 
 ### [Project 2: [Simulink Module]](projects/project2 Simulink Module/)
 
@@ -64,13 +66,25 @@ Users can input the lengths of two links into the Simple Robotics Simulation app
 * [Energy Management Strategy](projects/project2 Simulink Module/Energy Management Strategy)
   * design an Energy Management Strategy (EMS) model for distributing power demand among a battery, ultracapacitor, and fuel cell, ensuring positive power output and efficient load distribution.
 
+### [Project 3: [Arduino Module]](projects/project3 Arduino Module/)
+
+* [Traffic Light](projects/project3 Arduino Module/Traffic Light)
+  * simulate a complex traffic light system using Arduino and LEDs.
+* [IO Interface](projects/project3 Arduino Module/IO Interface)
+  * small examples using LEDs, Buttons, and Potentiometer, to cover the Digital Input/Output , PWM and Analog Read Concepts.
+* [DC Motor](projects/project3 Arduino Module/DC Motor)
+  * simulate a DC Motor Control (ON/OFF, Direction, and Speed).
+* [Car Blinker](projects/project3 Arduino Module/Car Blinker)
+  * design a Simulink model for a Car Blinker.
+
 ...
 
 ## Folder Structure
 
 - `/projects`: Contains subdirectories for each individual project.
-  - `/project1`: Simple Robotics Simulation application.
+  - `/project1`: MATLAB Module.
   - `/project2`: Simulink Module.
+  - `/project3`: Arduino Module.
 - `/docs`: Additional documentation related to the projects or MBD concepts.
 - `/scripts`: Any scripts or tools used in the development process.
 - `/examples`: Code examples or model files that illustrate specific concepts.
