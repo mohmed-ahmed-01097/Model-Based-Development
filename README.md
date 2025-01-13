@@ -11,8 +11,8 @@ This repository is dedicated to my studies and projects related to Model-Based D
 1. MBD Concepts Module                              ████████████████████  100% ✅(Completed)
 2. MATLAB Basics Module                             ████████████████████  100% ✅(Completed)
 3. Simulink Basics Module                           ████████████████████  100% ✅(Completed)
-4. Arduino Simulink Interface Module                ██████████████████░░   90% 🔄(In Progress)
-5. PID Controller Design Module                     ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
+4. Arduino Simulink Interface Module                ████████████████████  100% ✅(Completed)
+5. PID Controller Design Module                     ██████████████████░░   90% 🔄(In Progress)
 6. MATLAB Scripting Module                          ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 7. System Modeling & Model Architecture Module      ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 8. Stateflow Design Module                          ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
@@ -76,6 +76,17 @@ Model-Based Development (MBD) is a methodology that uses models as the core arti
   * simulate a DC Motor Control (ON/OFF, Direction, and Speed).
 * [Car Blinker](projects/project3 Arduino Module/Car Blinker)
   * design a Simulink model for a Car Blinker.
+
+### [Project 3: [PID Control Module]](projects/project4 PID Control Module/)
+
+* [First Order](projects/project4 PID Control Module/First Order)
+  * model a first-order system, analyze its time response, and observe the effects of different system parameters on its behavior.
+* [Second Order](projects/project4 PID Control Module/Second Order)
+  * model a second-order system, analyze its time response, and observe the effects of different system parameters on its behavior.
+* [Open-Closed Loop](projects/project4 PID Control Module/Open-Closed Loop)
+  * illustrate the distinction between open-loop and closed-loop systems without incorporating controllers using MATLAB and Simulink.
+* [PID_Control](projects/project4 PID Control Module/PID_Control)
+  * comprehend and compare the functionalities of P-Controller, I-Controller, and D-Controller through MATLAB and Simulink simulations using a First/Second-order system.
 
 ...
 
