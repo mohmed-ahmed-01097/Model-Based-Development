@@ -12,9 +12,9 @@ This repository is dedicated to my studies and projects related to Model-Based D
 2. MATLAB Basics Module                             ████████████████████  100% ✅(Completed)
 3. Simulink Basics Module                           ████████████████████  100% ✅(Completed)
 4. Arduino Simulink Interface Module                ████████████████████  100% ✅(Completed)
-5. PID Controller Design Module                     ██████████████████░░   90% 🔄(In Progress)
-6. MATLAB Scripting Module                          ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
-7. System Modeling & Model Architecture Module      ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
+5. PID Controller Design Module                     ████████████████████  100% ✅(Completed)
+6. MATLAB Scripting Module                          ████████████████████  100% ✅(Completed)
+7. System Modeling & Model Architecture Module      █░░░░░░░░░░░░░░░░░░░   10% 🔄(In Progress)
 8. Stateflow Design Module                          ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 9. C Programming Overview Module                    ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 10. Embedded Coder Module                           ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
@@ -87,6 +87,13 @@ Model-Based Development (MBD) is a methodology that uses models as the core arti
   * illustrate the distinction between open-loop and closed-loop systems without incorporating controllers using MATLAB and Simulink.
 * [PID_Control](projects/project4 PID Control Module/PID_Control)
   * comprehend and compare the functionalities of P-Controller, I-Controller, and D-Controller through MATLAB and Simulink simulations using a First/Second-order system.
+
+### [Project 3: [MATLAB Script Module]](projects/project5 MATLAB Script Module/)
+
+* [Add Two Numbers](projects/project4 PID Control Module/Add Two Numbers)
+  * programmatically create a model that contains “Add Two Numbers” block with mask.
+* [PID Control](projects/project4 PID Control Module/PID Control)
+  * create a MATLAB script that generates a Simulink model for a simple PID control system.
 
 ...
 
