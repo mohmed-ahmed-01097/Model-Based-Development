@@ -14,8 +14,8 @@ This repository is dedicated to my studies and projects related to Model-Based D
 4. Arduino Simulink Interface Module                ████████████████████  100% ✅(Completed)
 5. PID Controller Design Module                     ████████████████████  100% ✅(Completed)
 6. MATLAB Scripting Module                          ████████████████████  100% ✅(Completed)
-7. System Modeling & Model Architecture Module      █░░░░░░░░░░░░░░░░░░░   10% 🔄(In Progress)
-8. Stateflow Design Module                          ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
+7. System Modeling & Model Architecture Module      ████████████████████  100% ✅(Completed)
+8. Stateflow Design Module                          █░░░░░░░░░░░░░░░░░░░   10% 🔄(In Progress)
 9. C Programming Overview Module                    ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 10. Embedded Coder Module                           ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 11. Graduation Project (Battery Management System)  ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
@@ -77,7 +77,7 @@ Model-Based Development (MBD) is a methodology that uses models as the core arti
 * [Car Blinker](projects/project3 Arduino Module/Car Blinker)
   * design a Simulink model for a Car Blinker.
 
-### [Project 3: [PID Control Module]](projects/project4 PID Control Module/)
+### [Project 4: [PID Control Module]](projects/project4 PID Control Module/)
 
 * [First Order](projects/project4 PID Control Module/First Order)
   * model a first-order system, analyze its time response, and observe the effects of different system parameters on its behavior.
@@ -88,12 +88,37 @@ Model-Based Development (MBD) is a methodology that uses models as the core arti
 * [PID_Control](projects/project4 PID Control Module/PID_Control)
   * comprehend and compare the functionalities of P-Controller, I-Controller, and D-Controller through MATLAB and Simulink simulations using a First/Second-order system.
 
-### [Project 3: [MATLAB Script Module]](projects/project5 MATLAB Script Module/)
+### [Project 5: [MATLAB Script Module]](projects/project5 MATLAB Script Module/)
 
 * [Add Two Numbers](projects/project4 PID Control Module/Add Two Numbers)
   * programmatically create a model that contains “Add Two Numbers” block with mask.
 * [PID Control](projects/project4 PID Control Module/PID Control)
   * create a MATLAB script that generates a Simulink model for a simple PID control system.
+
+### [Project 6: [System Modeling Module]](projects/project6 System Modeling Module/)
+
+Create the Model, and MIL & SIL Test Harness of this systems.
+
+* [Accelerator Pedal Position Sensor](projects/project6 System Modeling Module/Accelerator Pedal Position Sensor)
+  * a critical component in modern automotive systems, providing input to the
+    engine control unit (ECU) about the driver's intended acceleration.
+* [Simple Wiper Control System](projects/project6 System Modeling Module/Simple Wiper Control System)
+  * manages the operation of windshield wipers in vehicles to ensure visibility in adverse weather.
+
+* [Throttle Position Sensors](projects/project6 System Modeling Module/Throttle Position Sensors)
+  * manages the Measurement of throttle Position in vehicles to control the flow of the fuel.
+* [Series RLC Resonant Circuit](projects/project6 System Modeling Module/Series RLC Resonant Circuit)
+  * simulate the resonant circuit and display the current waveform as we change the frequency
+    dynamically.
+* [Counter Up/Down](projects/project6 System Modeling Module/Counter UpDown)
+  * Implement a counter in Simulink that increments on each rising edge of a signal representing a button press and resets to zero when another button is pressed.
+
+* [Zero-Cross Detection](projects/project6 System Modeling Module/Zero-Cross Detection)
+  * implementing a zero-cross detection system using Enabled Subsystem.
+* [Comprehensive PMSM Control](projects/project6 System Modeling Module/Comprehensive PMSM Control)
+  * Implement and analyze an advanced control system for a Permanent Magnet Synchronous Motor (PMSM) using Simulink.
+  * Implement Flux, Position, and Electrical Speed Observer to include rotor position and electrical speed estimation.
+  * Implement the ABC to Alpha-Beta transformation block.
 
 ...
 
@@ -103,6 +128,9 @@ Model-Based Development (MBD) is a methodology that uses models as the core arti
   - `/project1`: MATLAB Module.
   - `/project2`: Simulink Module.
   - `/project3`: Arduino Module.
+  - `/project4`: PID Control Module.
+  - `/project5`: MATLAB Script Module.
+  - `/project6`: System Modeling Module.
 - `/docs`: Additional documentation related to the projects or MBD concepts.
 - `/scripts`: Any scripts or tools used in the development process.
 - `/examples`: Code examples or model files that illustrate specific concepts.
