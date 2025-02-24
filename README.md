@@ -15,9 +15,9 @@ This repository is dedicated to my studies and projects related to Model-Based D
 5. PID Controller Design Module                     ████████████████████  100% ✅(Completed)
 6. MATLAB Scripting Module                          ████████████████████  100% ✅(Completed)
 7. System Modeling & Model Architecture Module      ████████████████████  100% ✅(Completed)
-8. Stateflow Design Module                          █░░░░░░░░░░░░░░░░░░░   10% 🔄(In Progress)
-9. C Programming Overview Module                    ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
-10. Embedded Coder Module                           ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
+8. Stateflow Design Module                          ████████████████████  100% ✅(Completed)
+9. Embedded Coder Module                            ░░░░░░░░░░░░░░░░░░░░    0% 🔄(In Progress)
+10. C Programming Overview Module                   ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 11. Graduation Project (Battery Management System)  ░░░░░░░░░░░░░░░░░░░░    0% ⏳(Waiting)
 ```
 
@@ -120,6 +120,27 @@ Create the Model, and MIL & SIL Test Harness of this systems.
   * Implement Flux, Position, and Electrical Speed Observer to include rotor position and electrical speed estimation.
   * Implement the ABC to Alpha-Beta transformation block.
 
+### [Project 7: [Stateflow Design Module]](projects/project7 Stateflow Design Module/)
+
+* [LED_Toggle](projects/project7 Stateflow Design Module/LED_Toggle)
+  * build state machine to model the blink led every 0.5 sec application
+* [Traffic_Light](projects/project7 Stateflow Design Module/Traffic_Light)
+  * implement the traffic light with two State machine:
+    * Normal State (Stop State - Go State - Prepare to Stop State)
+    * Fault State (On state - Off State)
+* [Zero-Cross Detection](projects/project7 Stateflow Design Module/Zero-Cross Detection)
+  * Implemented a state machine for zero-cross detection.
+* [Up/Down Counter](projects/project7 Stateflow Design Module/Up_Down Counter)
+  - Developed a Simulink counter that increments on each rising edge of a button press and resets when triggered by another signal.
+* [Solar Panel Tracker](projects/project7 Stateflow Design Module/Solar Panel Tracker)
+  * Design and simulate a solar panel tracking system utilizing four Light Dependent Resistor (LDR) sensors and a servo motor to optimize the solar panel's orientation for maximum sunlight exposure.
+* [Accelerator Pedal Position Sensor](projects/project7 Stateflow Design Module/Accelerator Pedal Position Sensor)
+  * Design and simulate the Accelerator Pedal Position Sensor Logic using Flow Chart.
+* [Cruise Control System](projects/project7 Stateflow Design Module/Cruise Control System)
+  * model the dynamic behavior of a vehicle's speed control system, considering various operating modes, user inputs, fault detection, and enhanced cruise control operation.
+* [Cell Balancing](projects/project7 Stateflow Design Module/Cell Balancing)
+  * Explored both passive and active cell balancing techniques to improve battery management efficiency.
+
 ...
 
 ## Folder Structure
@@ -131,6 +152,7 @@ Create the Model, and MIL & SIL Test Harness of this systems.
   - `/project4`: PID Control Module.
   - `/project5`: MATLAB Script Module.
   - `/project6`: System Modeling Module.
+  - `/project7`: Stateflow Design Module.
 - `/docs`: Additional documentation related to the projects or MBD concepts.
 - `/scripts`: Any scripts or tools used in the development process.
 - `/examples`: Code examples or model files that illustrate specific concepts.
