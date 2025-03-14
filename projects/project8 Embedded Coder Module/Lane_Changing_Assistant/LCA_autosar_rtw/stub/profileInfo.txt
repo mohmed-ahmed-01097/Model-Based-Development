@@ -1,0 +1,14 @@
+#H:\0\New MAAM\10 - MBD\Model-Based-Development\projects\project8 Embedded Coder Module\Lane_Changing_Assistant\LCA_autosar_rtw\stub\Rte_LCA.h
+#this file contains the list of RTE methods that the profiling must filter out
+-Rte_DRead_RPortIn_Highway_Input_Signal
+-Rte_DRead_RPortIn_Enable_Display
+-Rte_DRead_RPortIn_Input_Switch
+-Rte_DRead_RPortIn_Lane_Input_Signal
+-Rte_Write_PPortOut_Display_Mode_1
+-Rte_Invalidate_PPortOut_Display_Mode_1
+-Rte_Write_PPortOut_Display_Mode_2
+-Rte_Invalidate_PPortOut_Display_Mode_2
+-Rte_Write_PPortOut_Display_Mode_3
+-Rte_Invalidate_PPortOut_Display_Mode_3
+-Rte_Write_PPortOut_Display_Mode_4
+-Rte_Invalidate_PPortOut_Display_Mode_4
