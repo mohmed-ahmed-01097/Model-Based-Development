@@ -18,7 +18,7 @@ This repository is dedicated to my studies and projects related to Model-Based D
 8. Stateflow Design Module                          ████████████████████  100% ✅(Completed)
 9. Embedded Coder Module                            ████████████████████  100% ✅(Completed)
 10. C Programming Overview Module                   ████████████████████  100% ✅(Completed)
-11. Graduation Project (Battery Management System)  ░░░░░░░░░░░░░░░░░░░░    0% 🔄(In Progress)
+11. Graduation Project (Battery Management System)  ████████████████████  100% ✅(Completed)
 ```
 
 ✅ **Completed** 🔄 **In Progress** **⏳ Orange Circle** 🚧 **Blocked**
