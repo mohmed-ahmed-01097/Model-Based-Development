@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model ACC_SWC
+Model version                : 1.3
+Simulink Coder version       : Simulink Coder 9.8 (R2022b) 13-May-2022
+XML source code generated on : Fri Jul 04 00:20:22 2025
+Model Checksum               : 200994247 226428829 1854924925 1373999861
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>AUTOSAR</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Services</SHORT-NAME>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>NvM</SHORT-NAME>
+                            <ELEMENTS>
+                                <CLIENT-SERVER-INTERFACE UUID="18417768-78fd-4333-befd-569ad315b976">
+                                    <SHORT-NAME>NvMService</SHORT-NAME>
+                                    <LONG-NAME>
+                                        <L-4 L="FOR-ALL"/>
+                                    </LONG-NAME>
+                                    <DESC>
+                                        <L-2 L="FOR-ALL">Covers AUTOSAR_SWS_NVRAMManager.pdf V3.2.0 R4.0 Rev 3 - NVM734</L-2>
+                                    </DESC>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="ca6ad0d5-6bdd-4fb9-9d2d-d25b463f578c">
+                                            <SHORT-NAME>GetDataIndex</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">GetDataIndex</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="ed839476-bf6f-463e-be72-427c67d0ee61">
+                                                    <SHORT-NAME>DataIndexPtr</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">DataIndexPtr</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="d468bdaf-acb0-4036-95ba-ef65c3b97204">
+                                            <SHORT-NAME>SetDataIndex</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">SetDataIndex</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e764a790-b769-44d5-9602-0c079cbe99a7">
+                                                    <SHORT-NAME>DataIndex</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">DataIndex</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="fa8c90ac-84ae-4824-96fe-4eec173a4049">
+                                            <SHORT-NAME>SetRamBlockStatus</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">SetRamBlockStatus</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e1b3b0e4-9da4-4bfb-ae59-7e0e3d1ca8b9">
+                                                    <SHORT-NAME>BlockChanged</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">BlockChanged</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="a713f9da-2210-47ad-8c9b-cdf1f6c316f2">
+                                            <SHORT-NAME>ReadBlock</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">ReadBlock</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="3029c1f2-d1f4-4d1a-8bca-dd455b319c61">
+                                                    <SHORT-NAME>DstPtr</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">DstPtr</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>DATA_REFERENCE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/NvM/NvM_DstPtrType</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="d6a5f7db-8807-4d5f-b0c5-071d02f10481">
+                                            <SHORT-NAME>WriteBlock</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">WriteBlock</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="6ba313a7-43e3-45e0-83ad-a9c47aadf6ee">
+                                                    <SHORT-NAME>SrcPtr</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">SrcPtr</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>DATA_REFERENCE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/NvM/NvM_DstPtrType</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="658d04d4-7253-4179-b731-91a0ac34767c">
+                                            <SHORT-NAME>RestoreBlockDefaults</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">RestoreBlockDefaults</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="516cb3e9-2ceb-43f1-a59f-bf4db70b04c0">
+                                                    <SHORT-NAME>DestPtr</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">DestPtr</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>DATA_REFERENCE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/NvM/NvM_DstPtrType</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="9059a7e9-e573-493f-814e-60ef76f7f318">
+                                            <SHORT-NAME>EraseNvBlock</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">EraseNvBlock</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS/>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="98ebdc9a-ea8c-415a-9e42-5e7a62224aee">
+                                            <SHORT-NAME>InvalidateNvBlock</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">InvalidateNvBlock</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS/>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="927bfca0-c707-40d7-9de1-e7152ba30243">
+                                            <SHORT-NAME>GetErrorStatus</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">GetErrorStatus</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e639fac3-0119-4275-954a-6670c5ce47f2">
+                                                    <SHORT-NAME>RequestResultPtr</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">RequestResultPtr</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/NvM/NvM_RequestResultType</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="DCE:4e860df7-fc61-6d37-89f6-6fac188f5df8">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <IMPLEMENTATION-DATA-TYPE UUID="6efd0e99-e4e5-4bb3-94ff-72dd7cbf8ee7">
+                                    <SHORT-NAME>NvM_DstPtrType</SHORT-NAME>
+                                    <CATEGORY>DATA_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-POINTER-TARGET-PROPS>
+                                                    <TARGET-CATEGORY>VALUE</TARGET-CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/void</BASE-TYPE-REF>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                </SW-POINTER-TARGET-PROPS>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <IMPLEMENTATION-DATA-TYPE>
+                                    <SHORT-NAME>NvM_RequestResultType</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <CLIENT-SERVER-INTERFACE UUID="d98f711c-e91d-4653-8a48-99f50aee54af">
+                                    <SHORT-NAME>NvMAdmin</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="0b452ea6-e9b6-4bd3-adab-49beacf2d379">
+                                            <SHORT-NAME>SetBlockProtection</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="df465826-0031-4708-8e72-df3a08fc9f4d">
+                                                    <SHORT-NAME>ProtectionEnabled</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">ProtectionEnabled</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMAdmin/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="5d7e2db9-d61e-40cc-acff-4b5904631a36">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>AUTOSAR_PlatformTypes</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>BaseTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>boolean</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Boolean</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>boolean</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>uint8</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">unsigned integer 8bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>unsigned char</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>uint16</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">unsigned integer 16bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>unsigned short</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>uint32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">unsigned integer 32bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>unsigned int</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>sint8</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">signed integer 8bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>char</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>sint16</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">signed integer 16bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>short</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>sint32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">signed integer 32bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>sint32</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>float32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Float</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>float32</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>float64</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Float</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>float</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE UUID="DCE:336cc76e-0d98-686d-b4be-b6ab21908e9d">
+                            <SHORT-NAME>void</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>VOID</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>void</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>CompuMethods</SHORT-NAME>
+                    <ELEMENTS>
+                        <COMPU-METHOD>
+                            <SHORT-NAME>boolean</SHORT-NAME>
+                            <CATEGORY>TEXTTABLE</CATEGORY>
+                            <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                            <COMPU-INTERNAL-TO-PHYS>
+                                <COMPU-SCALES>
+                                    <COMPU-SCALE>
+                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                        <COMPU-CONST>
+                                            <VT>FALSE</VT>
+                                        </COMPU-CONST>
+                                    </COMPU-SCALE>
+                                    <COMPU-SCALE>
+                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                        <COMPU-CONST>
+                                            <VT>TRUE</VT>
+                                        </COMPU-CONST>
+                                    </COMPU-SCALE>
+                                </COMPU-SCALES>
+                            </COMPU-INTERNAL-TO-PHYS>
+                        </COMPU-METHOD>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>boolean</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Boolean</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR_PlatformTypes/CompuMethods/boolean</COMPU-METHOD-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>uint8</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">unsigned integer 8bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>uint16</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">unsigned integer 16bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>uint32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">unsigned integer 32bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>sint8</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">signed integer 8bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/sint8</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>sint16</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">signed integer 16bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/sint16</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>sint32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">signed integer 32bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/sint32</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>float32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Float</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/float32</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>float64</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Double</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/float64</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

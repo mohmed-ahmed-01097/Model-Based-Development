@@ -1,0 +1,30 @@
+{
+ "version":3,
+ "baseUrl":"support/slwebview_files",
+ "homeHid":1,
+ "sections":[
+  {
+   "hid":1,
+   "sid":"ACC_SWC",
+   "name":"ACC_SWC",
+   "fullname":"ACC_SWC",
+   "label":"ACC_SWC",
+   "parent":0,
+   "descendantIDs":[
+    2,
+    3,
+    4,
+    5
+   ],
+   "descendantsURL":"support/slwebview_files/ACC_SWC_diagrams_1.json",
+   "sysViewURL":"support/slwebview_files/ACC_SWC_p.json"
+  }
+ ],
+ "optViews":[
+ ],
+ "display":{
+  "informer":false,
+  "notes":false
+ },
+ "iconsUrl":"support/slwebview_files/icon.css"
+}

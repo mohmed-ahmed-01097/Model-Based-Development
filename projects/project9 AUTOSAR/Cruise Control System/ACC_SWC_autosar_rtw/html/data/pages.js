@@ -1,0 +1,1 @@
+var reportPages = [["Summary","ACC_SWC_survey.html"],["Subsystem Report","ACC_SWC_subsystems.html"],["Code Interface Report","ACC_SWC_interface.html"],["Traceability Report","ACC_SWC_trace.html"],["Static Code Metrics Report","ACC_SWC_metrics.html"],["Code Replacements Report","ACC_SWC_replacements.html"],["Coder Assumptions","ACC_SWC_coderassumptions.html"]];
