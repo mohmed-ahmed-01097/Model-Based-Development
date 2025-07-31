@@ -1,3 +1,6 @@
 [submodule "Battery-Management-System"]
 	path = Battery-Management-System
 	url = https://github.com/mohmed-ahmed-01097/Battery-Management-System
+[submodule "Advanced-Driver-Assistance-Systems"]
+	path = Advanced-Driver-Assistance-Systems
+	url = https://github.com/mohmed-ahmed-01097/Advanced-Driver-Assistance-Systems
